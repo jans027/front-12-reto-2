@@ -1,0 +1,35 @@
+@use 'variables';
+@use 'destinos';
+@use 'detalles';
+
+
+.contenedorPrincipal1{
+    @include variables.contenedorPrincipal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(https://picsum.photos/id/883/500);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(max-width:600px) {
+        width: 100%;
+        height: 100vh;
+        margin-top: 0;
+    }
+    .botonInicio{
+        padding: 1em 2em;
+        height: fit-content;
+        border-radius: 2.5em;
+        background-color: variables.$color2;
+        border:none;
+        margin-bottom: 3em;
+        color: variables.$color4;
+        font-family: variables.$fuentePrincipal;
+        font-size: 600;
+        font-size: 1.3em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}

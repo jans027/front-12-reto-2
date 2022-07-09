@@ -1,0 +1,213 @@
+@use 'variables';
+
+
+.contenedorPrincipal2{
+    @include variables.contenedorPrincipal;
+    font-family: variables.$fuentePrincipal;
+    @media(max-width:600px) {
+        width: 100%;
+        height: max-content;
+        margin-top: 0;
+    }
+    .section1{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        height: 4em;
+        margin: 0 auto;
+        margin-top: 1em;
+        justify-content: space-around;
+        .avatar1{
+            padding: .6em;
+            border-radius: .8em;
+            background-color: rgb(219, 219, 219);
+            color: variables.$color2;
+            font-size: 1.5em;
+        }
+        .textoDestino1{
+            width: 50%;
+            p{
+                margin: 0;
+                font-size: .8em;
+                // color: variables.$color3;
+            }
+            h5{
+                margin: 0;
+                font-size: 1.4em;
+                // color: variables.$color3;
+            }
+        }
+        .bell1{
+            padding: .4em;
+            border-radius: .8em;
+            background-color: rgb(219, 219, 219);
+            color: variables.$color2;
+            font-size: 1.5em;
+        }
+    }
+    .section2{
+        width: 90%;
+        height: 12em;
+        margin: 0 auto;
+        margin-top: 1em;
+        border-radius: 1em;
+        background-image: url(https://picsum.photos/id/1006/500);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .input1{
+            width: 90%;
+            height: 4em;
+            border-radius: 1em;
+            border: none;
+            margin-bottom: 1em;
+            padding: 0 1.5em;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        .botonBuscador{
+            position: absolute;
+            display: block;
+            top: 7em;
+            right: 15%;
+            background-color: variables.$color2;
+            border: none;
+            padding: .2em;
+            font-size: 2em;
+            color: blanchedalmond;
+            border-radius: .5em;
+            cursor: pointer;
+            @media(min-width:600px) {
+                top: 8.3em;
+                right: 20%;
+                
+            }
+        }
+    }
+    .section3{
+        width: 85%;
+        margin: 0 auto;
+        padding: 0 1em;
+        color: variables.$color3;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    .section4{
+        display: flex;
+        width: 90%;
+        height: 5em;
+        margin: 0 auto;
+        justify-content: space-around;
+        .img1{
+            border-radius: 50%;
+            overflow: hidden;
+            width: 17%;
+            height:100%;
+            box-shadow: 5px 5px 49px -10px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 5px 5px 49px -10px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 5px 49px -10px rgba(0,0,0,0.75);
+            @media (max-width: 800px){
+                height:60px;
+            }
+            @media (min-width: 800px){
+                height:120%;
+            }
+            @media (min-width: 1000px){
+                width: 120px;
+            }
+            img{
+                // height: 100%;
+                object-fit: contain;
+                object-position: center center;
+            }
+        }
+    }
+    .section5{
+        width: 90%;
+        height: 3em;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        div{
+            text-align: center;
+            width: 90px;
+            color: variables.$color3;
+            font-size: .9em;
+            @media(max-width:385px) {
+                font-size: .6em;
+                width: 60px;
+            }
+        }
+        
+
+    }
+    .section6{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 1em;
+        .imgRecomendada{
+            border-radius: 1em;
+            height: 10em;
+            margin: 1em;
+            overflow: hidden;
+            @media(max-width:600px) {
+                height: 5em;
+            }
+            img{
+                border-radius: 1em;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5em;
+        margin-bottom: .5em;
+        color: variables.$color2;
+        a{
+            color: variables.$color2;
+            cursor: pointer;
+            :hover{
+                padding: .5em;
+                border-radius: 50%;
+                background-color:variables.$color2;
+                color: #ffffff;
+            }
+        }
+    }
+
+}
+
+
+.modoOscuro{
+    background-color: rgb(32, 32, 32);
+    main{
+        section{
+            p, h5{
+                color: variables.$color1;
+            }
+        }
+    }
+    
+}
+
+.botonColores{
+    .contenedorPrincipal2{
+        border: 1px solid variables.$color1;
+        .color{
+            color: variables.$color1;
+        }
+        .botonBuscador{
+            color: #ffffff;
+            background-color:variables.$color1;
+        }
+        }
+}

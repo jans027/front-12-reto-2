@@ -1,0 +1,77 @@
+@use 'variables';
+
+.contenedorPrincipal3{
+    // @include variables.contenedorPrincipal;
+    font-family: variables.$fuentePrincipal;
+    padding: .5em;
+    margin-top: 5em;
+    .contenedorDetalles{
+        width: 90%;
+        height: 40vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .imgDetalles{
+            width: 48%;
+            height: 25em;
+            overflow: hidden;
+            @media(max-width:870px) {
+                width: 100%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+                border-radius: 1em;
+            }
+        }
+        .textoDetalles{
+            width: 48%;
+            @media(max-width:870px) {
+                width: 100%;
+                .sec1{
+                    font-size: 1em;
+                    :nth-child(2){
+                        font-size: .7em;
+                    }
+                }
+            }
+            .sec1{
+                text-align: justify;
+                margin-top: 1em;
+            }
+            .sec2{
+                // border: 1px solid red;
+            }
+            .sec3{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em;
+                .precio{
+                    // margin: 0;
+                    p{
+                        margin: 0;
+                    }
+                    h5{
+                        font-size: 1.7em;
+                        margin: 0;
+                        :nth-child(1){
+                            color: variables.$color2;
+                        }
+                    }
+                }
+                a{
+                    background-color: variables.$color2;
+                    color: antiquewhite;
+                    text-decoration: none;
+                    height: 1em;
+                    padding: 1em 2.2em 1.5em 2.2em;
+                    border-radius: 1.8em;
+                }
+            }
+        }
+    }
+}

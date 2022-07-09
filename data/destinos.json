@@ -1,0 +1,70 @@
+{
+    "destinos": [
+        {
+            "id": 1,
+            "name": "Corn Kernels - Frozen",
+            "description": "Nephrotic syndrome w diffuse mesangial prolif glomrlneph",
+            "image": "https://picsum.photos/300?random=1",
+            "price": "$6.660",
+            "category": "mountain"
+        },
+        {
+            "id": 2,
+            "name": "Chicken - Leg / Back Attach",
+            "description": "Unsp pedl cyclst injured in collision w oth pedl cyc in traf",
+            "image": "https://picsum.photos/300?random=2",
+            "price": "$4.310",
+            "category": "mountain"
+        },
+        {
+            "id": 10,
+            "name": "Spinach - Baby",
+            "description": "Stable burst fx third thor vertebra, init for opn fx",
+            "image": "https://picsum.photos/300?random=3",
+            "price": "$4.360",
+            "category": "mountain"
+        },
+        {
+            "id": 45,
+            "name": "Sugar - Invert",
+            "description": "Legal intervnt w inj by mch gun, law enforc offl inj, sqla",
+            "image": "https://picsum.photos/300?random=31",
+            "price": "$4.650",
+            "category": "city"
+        }
+    ],
+    "destinos2": [
+        {
+            "id": 60,
+            "name": "Schnappes - Peach, Walkers",
+            "description": "Traum subrac hem w LOC of 31-59 min, sequela",
+            "image": "https://picsum.photos/300?random=52",
+            "price": "$2.500",
+            "category": "city"
+        },
+        {
+            "id": 89,
+            "name": "Eggplant - Baby",
+            "description": "Disp fx of epiphy (separation) (upper) of unsp femr, 7thF",
+            "image": "https://picsum.photos/300?random63",
+            "price": "$1.550",
+            "category": "city"
+        },
+        {
+            "id": 3,
+            "name": "Sugar - Invert",
+            "description": "Legal intervnt w inj by mch gun, law enforc offl inj, sqla",
+            "image": "https://picsum.photos/300?random=21",
+            "price": "$4.650",
+            "category": "beach"
+        },
+        {
+            "id": 30,
+            "name": "Schnappes - Peach, Walkers",
+            "description": "Traum subrac hem w LOC of 31-59 min, sequela",
+            "image": "https://picsum.photos/300?random=22",
+            "price": "$3.550",
+            "category": "beach"
+        }
+    ]
+}

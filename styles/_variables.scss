@@ -1,0 +1,40 @@
+
+$color1:#73848C;
+$color2:#f65734;
+$color3:#452A33;
+$color4:#FAFCFB;
+$fuentePrincipal:'Poppins', sans-serif;
+
+@mixin contenedorPrincipal {
+    width: 80%;
+    // height: 90vmin;
+    margin: 0 auto;
+    margin-top: 3em;
+    border-radius: 1em;
+    border: 1px solid $color2;
+}
+
+@mixin posicion{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+@mixin contenedorPrincipal2 {
+    border: 1px solid $color1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
